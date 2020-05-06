@@ -1,0 +1,3 @@
+Success #stdin #stdout 0s 4380KB
+little-endian
+0000000000000001
