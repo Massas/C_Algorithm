@@ -1,0 +1,20 @@
+命令   Iabc:  abcを挿入
+       Dabc:  abcを削除
+       Sabc:  abcを検索
+命令は？ 登録しました
+
+ abc
+
+命令は？ 
+Success #stdin #stdout 0s 4368KB
+命令   Iabc:  abcを挿入
+       Dabc:  abcを削除
+       Sabc:  abcを検索
+命令は？ 登録されていません
+命令は？ 
+Success #stdin #stdout 0s 4516KB
+命令   Iabc:  abcを挿入
+       Dabc:  abcを削除
+       Sabc:  abcを検索
+命令は？ 削除されていません
+命令は？ 
