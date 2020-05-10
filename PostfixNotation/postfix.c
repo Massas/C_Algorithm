@@ -30,6 +30,7 @@ void factor(void){
     } 
     // 文字が空白 (' ') を除く表示文字 (printing character)の場合
     else if(isgraph(ch)){
+		// 1文字書き出す
         putchar(ch);
         readchar();
     } else{
@@ -40,16 +41,21 @@ void factor(void){
 // 数学における"項"を表す関数
 void term(void){
     factor();
-
     for(;;){
         if (ch == '*'){
             readchar();
             factor();
+    
+            // *を書き出す
             putchar('*');
+    
         } else if (ch == '/'){
             readchar();
             factor();
+    
+    		// /を書き出す
             putchar('/');
+    
         } else{
             break;
         }
@@ -58,17 +64,25 @@ void term(void){
 
 // 数学における"式"を表す関数
 void expression(void){
+
     term();
+
     // +か-の場合にはもう一文字読み込んでからputcharする
     for(;;){
         if(ch == '+'){
             readchar();
             term();
+            
+            // +を書き出す
             putchar('+');
+            
         }else if(ch == '-'){
             readchar();
             term();
+            
+            // -を書き出す
             putchar('-');
+            
         }else{
             break;
         }
